@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@neato/guider':
-    specifier: ^0.1.5
-    version: 0.1.5(@types/react@18.2.73)(next@14.1.4)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.4.3)(webpack@5.91.0)
+    specifier: ^1.0.1
+    version: 1.0.1(@types/react@18.2.73)(next@14.1.4)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.4.3)
   next:
     specifier: ^14.1.4
     version: 14.1.4(react-dom@18.2.0)(react@18.2.0)
@@ -236,8 +236,8 @@ packages:
       - supports-color
     dev: false
 
-  /@neato/guider@0.1.5(@types/react@18.2.73)(next@14.1.4)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.4.3)(webpack@5.91.0):
-    resolution: {integrity: sha512-0dmVOTWyEbHQwqXElOsMhYDnWMPIb84f8ZSIO+Bt0jhvRssSvnZtSDBJWBTdF198jIURWuG332vS9cBrKoEDig==}
+  /@neato/guider@1.0.1(@types/react@18.2.73)(next@14.1.4)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.4.3):
+    resolution: {integrity: sha512-5O0rS2UlyCaGQDvat6bl8ysHqkIDQN17eDuZOLO+mczMw/hKKN5OHFwZiGcPIGcDh1CpOPht5p/HBgvnrURXmA==}
     engines: {node: '>=20'}
     peerDependencies:
       next: '>=14.1.0'
@@ -250,14 +250,17 @@ packages:
       '@mdx-js/mdx': 3.0.1
       '@shikijs/transformers': 1.2.2
       '@theguild/remark-npm2yarn': 0.3.0
+      '@types/unist': 3.0.2
       '@vcarl/remark-headings': 0.1.0
       approximate-number: 2.1.1
       classnames: 2.5.1
       color: 4.2.3
       extra-watch-webpack-plugin: 1.0.3
+      flexsearch: 0.7.43
       git-url-parse: 14.0.0
       glob: 10.3.12
       gray-matter: 4.0.3
+      mdast-util-phrasing: 4.1.0
       next: 14.1.4(react-dom@18.2.0)(react@18.2.0)
       next-seo: 6.5.0(next@14.1.4)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
@@ -272,14 +275,20 @@ packages:
       shiki: 1.2.2
       tailwindcss-themer: 4.0.0(tailwindcss@3.4.3)
       type-fest: 4.14.0
+      unified: 11.0.4
+      unist-util-visit: 5.0.0
+      webpack: 5.91.0
       webpack-virtual-modules: 0.6.1
       zustand: 4.5.2(@types/react@18.2.73)(react@18.2.0)
     transitivePeerDependencies:
+      - '@swc/core'
       - '@types/react'
+      - esbuild
       - immer
       - supports-color
       - tailwindcss
-      - webpack
+      - uglify-js
+      - webpack-cli
     dev: false
 
   /@next/env@14.1.4:
@@ -1873,6 +1882,10 @@ packages:
   /flatted@3.2.9:
     resolution: {integrity: sha512-36yxDn5H7OFZQla0/jFJmbIKTdZAQHngCedGxiMmpNfEZM0sdEeT+WczLQrjK6D7o2aiyLYDnkw0R3JK0Qv1RQ==}
     dev: true
+
+  /flexsearch@0.7.43:
+    resolution: {integrity: sha512-c5o/+Um8aqCSOXGcZoqZOm+NqtVwNsvVpWv6lfmSclU954O3wvQKxxK8zj74fPaSJbXpSLTs4PRhh+wnoCXnKg==}
+    dev: false
 
   /for-each@0.3.3:
     resolution: {integrity: sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==}
